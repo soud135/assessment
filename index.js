@@ -132,17 +132,20 @@ const menu = [
   
   function addMenuItem(menu, menuItem) {
     // Your code here
+
+    menu.push(menuItem)
+    return menu
   }
   
-  // const newMenuItem = {
-  //   id: 306,
-  //   name: "Pizza",
-  //   category: "Main Course",
-  //   price: 14.99,
-  //   ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
-  // };
+   const newMenuItem = {
+     id: 306,
+     name: "Pizza",
+     category: "Main Course",
+    price: 14.99,
+     ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
+   };
   
-  // console.log(addMenuItem(menu, newMenuItem));
+   console.log(addMenuItem(menu, newMenuItem));
   
   /**********
     Question 4:
