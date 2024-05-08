@@ -66,8 +66,14 @@ const menu = [
   
   function isMenuItemInCategory(menuItem, category) {
     // Your code here
+
+    if (menuItem.category === category) 
+    {return true}
+    else {
+        return false
+    }
   }
-  // console.log(isMenuItemInCategory(menu[1], "Salad"));
+  console.log(isMenuItemInCategory(menu[1], "Salad"));
   
   /**********
     Question 3:
