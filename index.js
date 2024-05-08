@@ -158,8 +158,12 @@ const menu = [
   
   function countMainCourseItems(menu) {
     // Your code here
+
+    return menu.filter((menuItem) => {
+        
+        menuItem.category === "Main Course"}).length
   }
-  // console.log(countMainCourseItems(menu));
+   console.log(countMainCourseItems(menu));
   
   /**********
     Question 5: 🌶️
